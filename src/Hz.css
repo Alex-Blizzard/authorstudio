@@ -1,0 +1,24 @@
+#realcontent {
+    background-color: #333;
+    position: fixed;
+    top: 5px;
+    left: 0;
+    width: 2000px;
+    color: #fff;
+    height: 100px
+  }
+  
+  #fakecontent {
+    height: 2000px;
+  }
+
+  ::-webkit-scrollbar
+  {
+
+    display: none;
+  }
+  
+  
+  
+  
+  
