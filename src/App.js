@@ -64,7 +64,7 @@ class App extends Component {
      // console.log('New Left : ', newleft);
      
 
-      document.getElementById('real-cont').style.left= (newleft/2)+'px';
+      document.getElementById('real-cont').style.left= newleft+'px';
     },
     down: () => {
       
