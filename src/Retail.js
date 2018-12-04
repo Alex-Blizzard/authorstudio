@@ -10,10 +10,10 @@ const Ret = ()=>(
 
 
     <div id="retail">
-
+        <div> Discover</div>
         <img src = {i2}/>
         <label>RETAIL</label>
-        <div>Retails goods and retail services can be displayed to highlight their features and benefits. We help is to attract, engage and motivate the customer towards making a purchase.</div>
+        <div className='ret-cont'>Retails goods and retail services can be displayed to highlight their features and benefits. We help is to attract, engage and motivate the customer towards making a purchase.</div>
   
     </div>
 

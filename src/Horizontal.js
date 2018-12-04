@@ -7,14 +7,16 @@ class Scrolling extends Component {
   constructor(props) {
     super(props)
 
-    this.state = { animValues: window.outerWidth }
+    this.state = { animValues: window.outerWidth  }
 
     this.onScrollStart = this.onScrollStart.bind(this)
     this.resetMin = this.resetMin.bind(this)
     this.resetMax = this.resetMax.bind(this)
+    
   }
 
   componentDidMount() {
+      
     // Place the 'lock__' class on the HTML element - if toggled
     if (this.props.pageLock) {
       const orig = document.firstElementChild.className
@@ -39,11 +41,15 @@ class Scrolling extends Component {
     // (Basically, this for Apple mice that allow horizontal scrolling by default)
     var rawData = e.deltaY ? e.deltaY : e.deltaX
     var mouseY = Math.floor(rawData)
+    console.log(mouseY);
 
     // Bring in the existing animation values
     var animationValue = this.state.animValues
+    
     var newAnimationValue = animationValue + mouseY
+   
     var newAnimationValueNegative = animationValue - mouseY
+   
 
     if (!this.caniscroll()) {
       return
@@ -106,17 +112,18 @@ class Scrolling extends Component {
       var bounds = -(max - win)
 
       // Logic to hold everything in place
-      if (curr >= 1) {
+      if (curr >= window.outerWidth) {
         this.resetMin()
       } else if (curr <= bounds) {
         var x = bounds + 1
         this.resetMax(x)
+        console.log(x);
       }
     })
   }
 
   resetMin() {
-    this.setState({ animValues: 0 })
+    this.setState({ animValues: 1440})
   }
 
   resetMax(x) {
@@ -174,7 +181,7 @@ Scrolling.propTypes = {
 }
 
 Scrolling.defaultProps = {
-  reverseScroll: false,
+  reverseScroll: true,
   pageLock: false,
   config: null,
   style: { width: `100%`, height: `100%` },
