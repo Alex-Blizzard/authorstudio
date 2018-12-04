@@ -56,7 +56,7 @@ body
 
 .homediv{ position : relative; display : contents; width:100vw; height:100vh;}
 
-.hom-cont{ position: absolute; text-transform: uppercase; width:35%; font-family: 'Titillium Web', sans-serif; font-size:30px; left:50px;top :70vmin; z-index: 10;}
+.hom-cont{ position: absolute; text-transform: uppercase; width:35%; font-family: 'Titillium Web', sans-serif; font-size:30px; left:50px;top :70vmin; z-index: 0;}
 
 .srl-div{
 
