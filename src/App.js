@@ -4,7 +4,8 @@ import HorizontalScroll from './Horizontal';
 import Ret from  './Retail'
 import Des from  './Design'
 import Pro from './Projects';
-import Home from './home'
+import Home from './home';
+import Arrow from './Arrow';
 
  
 class ScrollingHorizontally extends Component {
@@ -12,8 +13,12 @@ class ScrollingHorizontally extends Component {
     render() {
         return (
           <div className='parent'>
+          
           <Home/>
+            
             <HorizontalScroll reversescroll = 'true' >
+            
+            <Arrow/>
 
             <Ret />
 

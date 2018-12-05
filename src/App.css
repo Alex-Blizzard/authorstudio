@@ -4,13 +4,16 @@
   
   scroll-behavior: smooth;
 }*/
+
+
 .parent{
   width: 100vw;
   height: 100vh;
+  transition: all 1s ease-out;
   background-image: url('bg.jpg'); background-size: cover; background-repeat: no-repeat; background-position-y: -150px;
 }
 .child{
-
+  
   width: 50vw;
   height: 100vh;
   background-color: #ccc;
@@ -52,7 +55,19 @@ body
 { width:100vw;   }
 /*overflow-x: scroll; overflow-y: hidden;*/
 
-.logo{ position: absolute; float: left; height: 10vmin; top :100px; left: 50px;}
+.logo{ position: absolute; float: left; height: 10vmin; top :100px; left: 50px;  
+  animation: loading 10s linear infinite; z-index: 10; 
+  width: 200px;}
+
+  .logo::after{
+    
+      padding-left: 20px;
+      content: "0%";
+      display: block;
+      text-align: center;
+      animation: percentage 10s linear infinite;
+  }
+
 
 .homediv{ position : relative; display : contents; width:100vw; height:100vh;}
 

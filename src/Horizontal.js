@@ -7,15 +7,29 @@ class Scrolling extends Component {
   constructor(props) {
     super(props)
 
-    this.state = { animValues: window.outerWidth  }
+    this.state = { animValues: window.outerWidth  ,autoscroll : 100 }
+
 
     this.onScrollStart = this.onScrollStart.bind(this)
     this.resetMin = this.resetMin.bind(this)
     this.resetMax = this.resetMax.bind(this)
+
+    
     
   }
+  
 
   componentDidMount() {
+
+    setTimeout(()=>{
+
+        this.setState({animValues : this.state.animValues-460})
+
+    },1000)
+    
+    
+    
+    
       
     // Place the 'lock__' class on the HTML element - if toggled
     if (this.props.pageLock) {
@@ -94,6 +108,8 @@ class Scrolling extends Component {
   }
 
   calculate() {
+
+    
     // Cancel the previous calculate
     clearTimeout(this.calculate.timer)
 
@@ -123,7 +139,7 @@ class Scrolling extends Component {
   }
 
   resetMin() {
-    this.setState({ animValues: 1440})
+    this.setState({ animValues: window.outerWidth})
   }
 
   resetMax(x) {
@@ -160,7 +176,8 @@ class Scrolling extends Component {
               display: `inline-flex`,
               height: `100%`,
               position: `absolute`,
-              willChange: `transform`
+              willChange: `transform`,
+              transition: 'all 1s ease-out'
             }
 
             return <div style={scrollingElementStyles}>{children}</div>
