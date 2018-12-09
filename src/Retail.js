@@ -1,29 +1,38 @@
-import React from 'react';
-import AS from './logo1.png';
-import i1 from './1.jpg';
-import './testsrl.css'
-import i2 from './5.jpg'
-import i3 from './6.jpg'
-
-const Ret = ()=>(
-
-
-
-    <div id="retail">
-        <img src = {i2}/>
-        <label>RETAIL</label>
-        <div className='ret-cont'>Retails goods and retail services can be displayed to highlight their features and benefits. We help is to attract, engage and motivate the customer towards making a purchase.</div>
-  
-    </div>
+import React, { Component } from 'react';
+import './App.css';
+import HorizontalScroll from './Horizontal-Retail';
+import Ret from  './Retail-Home'
+import Des from  './Design'
+import Pro from './Projects';
+import Arrow from './Arrow';
+import Rethome from './Retail-Content';
 
 
-    
+ 
+class Retail extends Component {
 
+    render() {
+        return (
+          
+          <div className='parent-ret'>
+         
+         <Rethome/>
+          
+            
+            <HorizontalScroll reversescroll = 'true' >
+            
+            
 
-);
+            <Ret />
 
-export default Ret;
+            <Des/>
+            
+            <Pro/>
+            
+            </HorizontalScroll>
+          </div>
+        )
+      }
+    }
 
-   
-
-
+export default Retail;

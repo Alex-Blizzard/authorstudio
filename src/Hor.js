@@ -7,7 +7,7 @@ import BG from './bg.jpg';
 import './App.css';
 import Home from './home.js';
 import Srl from './Scroll';
-import Ret from  './Retail'
+import Ret from  './Retail-Home'
 import Des from  './Design'
 import Pro from './Projects';
 import Anime from './Animation';

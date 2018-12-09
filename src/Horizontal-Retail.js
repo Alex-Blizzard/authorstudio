@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import DOM from 'react-dom'
 import { Motion, spring, presets } from 'react-motion'
 
-class Scrolling extends Component {
+class ScrollingRetail extends Component {
   constructor(props) {
     super(props)
 
@@ -23,7 +23,7 @@ class Scrolling extends Component {
 
     setTimeout(()=>{
 
-        this.setState({animValues : this.state.animValues-350})
+        this.setState({animValues : this.state.animValues-900})
 
     },1000)
     
@@ -131,7 +131,7 @@ class Scrolling extends Component {
       if (curr >= window.outerWidth) {
         this.resetMin()
       } else if (curr <= bounds) {
-        var x = bounds + 1
+        var x = bounds + 100
         this.resetMax(x)
         console.log(x);
       }
@@ -188,7 +188,7 @@ class Scrolling extends Component {
   }
 }
 
-Scrolling.propTypes = {
+ScrollingRetail.propTypes = {
   reverseScroll: PropTypes.bool,
   pageLock: PropTypes.bool,
   config: PropTypes.object,
@@ -197,12 +197,12 @@ Scrolling.propTypes = {
   children: PropTypes.array.isRequired
 }
 
-Scrolling.defaultProps = {
+ScrollingRetail.defaultProps = {
   reverseScroll: true,
-  pageLock: false,
+  pageLock: true,
   config: null,
   style: { width: `100%`, height: `100%` },
   className: null
 }
 
-export default Scrolling;
+export default ScrollingRetail;

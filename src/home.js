@@ -15,6 +15,7 @@ const home = ()=>(
         <img src ={AS} className='logo'></img>
     </div>
     <div className='hom-cont'>
+    
        <label> We are providing services with seamless experience in Brands and products </label>
     </div>
 

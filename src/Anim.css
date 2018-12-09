@@ -16,13 +16,14 @@
     -ms-transform: rotate(-90deg) translateY(-580%);
     transform: rotate(-90deg) translateY(-580%);
     display: block;
-    font-size: 1.16667rem;
+    font-size: 14px;
     top: 50%;
     position: absolute;
     text-transform: uppercase;
-    min-width: 300px;
+    min-width: 240px;
     text-align: center;
     left: 0;
+    
     -ms-transform-origin: center;
     transform-origin: center;
     font-weight: 500;

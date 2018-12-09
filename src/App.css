@@ -9,9 +9,15 @@
 .parent{
   width: 100vw;
   height: 100vh;
-  transition: all 1s ease-out;
+  /*transition: all 1s linear;*/
   background-image: url('bg.jpg'); background-size: cover; background-repeat: no-repeat; background-position-y: -150px;
 }
+.parent-ret{
+  width: 100vw;
+  height: 100vh;
+  /*transition: all 1s linear;*/
+  background-color: #000;}
+  
 .child{
   
   width: 50vw;
@@ -36,7 +42,7 @@
   width: 150vw;
   color: #fff;
 
-  transition : left 1s linear;
+ /*transition : left 1s linear;*/
   overflow-y: hidden;
  
 }

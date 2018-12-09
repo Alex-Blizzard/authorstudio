@@ -1,0 +1,11 @@
+.ret-logo{ position: absolute; float: left;  top :100px; left: 50px;  
+   
+    width: 200px; }
+  
+.ret-home-div{ position : relative; display: contents; width:100vw; height:100vh; background-color: #000;}
+
+.ret-hom-cont{ position: absolute; text-transform: uppercase; width:35%; font-family: 'Titillium Web', sans-serif; font-size:30px; left:50px;top:40vh; z-index: 0; color: #fff;}
+
+.ret-hom-cont >label:nth-child(1){display: block;}
+
+.ret-hom-cont >label:nth-child(2){font-size: 16px;}

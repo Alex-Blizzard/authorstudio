@@ -5,7 +5,9 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import ScrollingHorizontally from './Hor';
 import Arrowanim from './Arrow';
+import Retailhome from './Retail-Content';
 import Retail from './Retail';
+
 
 ReactDOM.render(<App/>, document.getElementById('root'));
 
