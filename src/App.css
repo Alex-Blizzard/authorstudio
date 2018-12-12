@@ -16,8 +16,10 @@
   width: 100vw;
   height: 100vh;
   /*transition: all 1s linear;*/
-  background-color: #000;}
+  background-image:url('13.jpg');background-repeat: no-repeat;background-size: cover; background-position-y: -300px;
   
+  }
+
 .child{
   
   width: 50vw;

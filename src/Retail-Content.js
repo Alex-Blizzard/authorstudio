@@ -19,8 +19,10 @@ const rethome = ()=>(
     <label>RETAIL WORK</label>
        <label>We know how to stage authentic stories and apply storytelling to strategic communication approaches.
 
-For us, brand and product publishing means presenting brands and products across all the relevant channels in an interdisciplinary and holistic manner. </label>
+<br/>For us, brand and product publishing means presenting brands <br/>and products across all the relevant channels in an interdisciplinary and holistic manner. </label>
     </div>
+
+    
 
     </div>
 

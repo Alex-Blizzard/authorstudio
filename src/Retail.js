@@ -16,12 +16,12 @@ class Retail extends Component {
           
           <div className='parent-ret'>
          
-         <Rethome/>
+         
           
             
             <HorizontalScroll reversescroll = 'true' >
             
-            
+            <Rethome/>
 
             <Ret />
 

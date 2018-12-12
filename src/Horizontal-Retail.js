@@ -13,17 +13,21 @@ class ScrollingRetail extends Component {
     this.onScrollStart = this.onScrollStart.bind(this)
     this.resetMin = this.resetMin.bind(this)
     this.resetMax = this.resetMax.bind(this)
-
-    
     
   }
+
+ 
+
+  
   
 
   componentDidMount() {
 
+   
+
     setTimeout(()=>{
 
-        this.setState({animValues : this.state.animValues-900})
+        this.setState({animValues : window.outerWidth})
 
     },1000)
     
@@ -39,6 +43,8 @@ class ScrollingRetail extends Component {
   }
 
   componentWillUnmount() {
+
+
     if (this.props.pageLock) {
       document.firstElementChild.className = document.firstElementChild.className.replace(
         / ?locked__/,
@@ -126,9 +132,10 @@ class ScrollingRetail extends Component {
 
       // Establish the bounds. We do this every time b/c it might change.
       var bounds = -(max - win)
+        console.log(window.outerWidth);
 
       // Logic to hold everything in place
-      if (curr >= window.outerWidth) {
+      if (curr >= (window.innerWidth - (window.innerWidth * 0.625)) ) {
         this.resetMin()
       } else if (curr <= bounds) {
         var x = bounds + 100
@@ -138,12 +145,28 @@ class ScrollingRetail extends Component {
     })
   }
 
+  /**
+   * Add event listener
+   */
+  componentDidMount() {
+    this.calculate();
+    window.addEventListener("resize", this.calculate.bind(this));
+  }
+
+  /**
+   * Remove event listener
+   */
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.calculate.bind(this));
+  }
+
+
   resetMin() {
-    this.setState({ animValues: window.outerWidth})
+    this.setState({ animValues: 0})
   }
 
   resetMax(x) {
-    this.setState({ animValues: x })
+    this.setState({ animValues: x } )
   }
 
   render() {
