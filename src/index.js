@@ -7,11 +7,12 @@ import ScrollingHorizontally from './Hor';
 import Arrowanim from './Arrow';
 import Retailhome from './Retail-Content';
 import Retail from './Retail';
-import Biba from './Biba';
-import Image from './Imagemodal'
+import Maria from './Maria';
+import SET from './STE';
+import Royal from './Royal'
 
 
-ReactDOM.render(<Biba/>, document.getElementById('root'));
+ReactDOM.render(<Retail/>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

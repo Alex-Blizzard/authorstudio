@@ -16,14 +16,7 @@ class ScrollingRetail extends Component {
     
   }
 
- 
-
-  
-  
-
   componentDidMount() {
-
-   
 
     setTimeout(()=>{
 
@@ -135,10 +128,10 @@ class ScrollingRetail extends Component {
         console.log(window.outerWidth);
 
       // Logic to hold everything in place
-      if (curr >= (window.innerWidth - (window.innerWidth * 0.625)) ) {
+      if (curr >= window.innerWidth) {
         this.resetMin()
       } else if (curr <= bounds) {
-        var x = bounds + 100
+        var x = bounds + 1
         this.resetMax(x)
         console.log(x);
       }
@@ -147,22 +140,22 @@ class ScrollingRetail extends Component {
 
   /**
    * Add event listener
-   */
-  componentDidMount() {
-    this.calculate();
-    window.addEventListener("resize", this.calculate.bind(this));
-  }
+  //  */
+  // componentDidMount() {
+  //   this.calculate();
+  //   window.addEventListener("resize", this.calculate.bind(this));
+  // }
 
-  /**
-   * Remove event listener
-   */
-  componentWillUnmount() {
-    window.removeEventListener("resize", this.calculate.bind(this));
-  }
+  // /**
+  //  * Remove event listener
+  //  */
+  // componentWillUnmount() {
+  //   window.removeEventListener("resize", this.calculate.bind(this));
+  // }
 
 
   resetMin() {
-    this.setState({ animValues: 0})
+    this.setState({ animValues: window.outerWidth-(window.outerWidth * 0.04)})
   }
 
   resetMax(x) {
