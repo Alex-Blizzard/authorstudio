@@ -193,7 +193,7 @@ class ScrollingRetail extends Component {
               height: `100%`,
               position: `absolute`,
               willChange: `transform`,
-              transition: 'all 1s ease-out'
+              transition: 'all 0.2s ease-out'
             }
 
             return <div style={scrollingElementStyles}>{children}</div>
@@ -222,3 +222,7 @@ ScrollingRetail.defaultProps = {
 }
 
 export default ScrollingRetail;
+
+
+
+

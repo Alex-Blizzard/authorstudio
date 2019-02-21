@@ -65,7 +65,7 @@
   
   #maria > #images{position : relative; top:15vh; width: 230vw; margin: 0px 15px 0px 50px;}
   
-  #Label{  text-decoration :underline; letter-spacing : 3px; font-size:50px; color:#717171; display :block; position :relative; top :10vh; font-family: 'Kaushan Script', cursive; text-align: left; left:5vw;  transform: translate3d(0, 0, 0) !important; }
+  #Label{  text-decoration :underline; letter-spacing : 3px; font-size:50px; color:#717171; display :block; font-family: 'Kaushan Script', cursive; text-align: left;   }
   
   #maria > .ret-cont{ font-size:16px; color:#717171; display :block; position :relative; top :20vh; font-family: 'Tittilium Web' , sans-serif; font-weight: 400; width:75vw; text-align: justify; line-height: 25px; left:5vw;}
   

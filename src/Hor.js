@@ -8,7 +8,7 @@ import './App.css';
 import Home from './home.js';
 import Srl from './Scroll';
 import Ret from  './Retail-Home'
-import Des from  './Design'
+import Des from  './Design-Home'
 import Pro from './Projects';
 import Anime from './Animation';
 import ScrollEvent from 'react-onscroll';

@@ -118,7 +118,9 @@ class Scrolling extends Component {
       // Calculate the bounds of the scroll area
       let el = DOM.findDOMNode(this.hScrollParent)
 
-      let max = el.lastElementChild.scrollWidth
+      // let max = el.lastElementChild.scrollWidth
+      let max = el.lastElementChild.scrollWidth;
+      
       let win = el.offsetWidth
 
       // Get the new animation values
@@ -168,7 +170,10 @@ class Scrolling extends Component {
         }}
         style={styles}
         className={`scroll-horizontal ${this.props.className || ''}`}
+
+        
       >
+     
         <Motion style={{ z: spring(this.state.animValues, springConfig) }}>
           {({ z }) => {
             const scrollingElementStyles = {
@@ -177,7 +182,7 @@ class Scrolling extends Component {
               height: `100%`,
               position: `absolute`,
               willChange: `transform`,
-              transition: 'all 1s ease-out'
+              transition: 'all 0.2s ease-out'
             }
 
             return <div style={scrollingElementStyles}>{children}</div>

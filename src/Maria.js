@@ -5,11 +5,12 @@ import m2 from './Maria/2.jpg'
 import m3 from './Maria/3.jpg'
 import m4 from './Maria/4.jpg'
 import m5 from './Maria/5.jpg'
-import { StickyContainer, Sticky } from 'react-sticky';
+
+import Labelscroll from './Labelscroll';
 
 
  
-class Biba extends Component {
+class Maria extends Component {
 
     clicked = ()=>{
 
@@ -43,7 +44,11 @@ class Biba extends Component {
 
          
 
-         <label id="Label" onClick={this.clicked}>Maria Grazia Severi</label>
+         <label id="Label" >Maria Grazia Severi</label>
+
+      
+
+         
 
         
 
@@ -75,6 +80,6 @@ class Biba extends Component {
     }
 }
 
-export default Biba;
+export default Maria;
    
    

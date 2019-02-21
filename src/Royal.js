@@ -7,7 +7,7 @@ import r4 from './RoyalEnfield/4.jpg'
 import r5 from './RoyalEnfield/5.jpg'
 import r6 from './RoyalEnfield/6.jpg'
 import r7 from './RoyalEnfield/7.jpg'
-import { StickyContainer, Sticky } from 'react-sticky';
+
 
 
  

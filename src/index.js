@@ -9,10 +9,36 @@ import Retailhome from './Retail-Content';
 import Retail from './Retail';
 import Maria from './Maria';
 import SET from './STE';
-import Royal from './Royal'
+import Royal from './Royal';
+import { BrowserRouter as Router,Route } from 'react-router-dom';
+import Rou from './Route'
+
+// const routing = (
+
+// <Router>
 
 
-ReactDOM.render(<Retail/>, document.getElementById('root'));
+//     <div>
+
+//         <Route exact path="/" component={App}></Route>
+//         <Route path="/Retail" component={retail}></Route>
+//     </div>
+// </Router>
+
+// )
+
+
+{/* <Router>
+    <Route render={({location})=>console.log(location) || (<App/>)}>
+
+
+    </Route>
+
+</Router> */}
+
+ReactDOM.render(
+
+<App/> , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

@@ -4,30 +4,21 @@ import AS from './logo2.png';
 
 
 
-const anime = ()=>(
+const anime = {
+
+    position: 'fixed',
+    top: 0,
+    zIndex: -1000,
+    backgroundColor: '#FFFEF4',
+    width: '100%',
+    display:'none'
 
 
-    <div className = 'anime-div'>
-
-        <div className='line'> </div>
-
-        <div className='line'> </div>
-        <div className='line'> </div>
-        <div className='line'> </div>
-        <div className='line'> </div>
-        <div className='line'> </div>
-        <div className='line'> </div>
-        <div className='line'> </div>
-        <div className='line'> </div>
-        <div className='line'> </div>
-        <div className='line'> </div>
-        <div className='line'> </div>
-        <div className='line'> </div>
-
-    </div>
+}
 
 
-);
+   
+
 
 export default anime;
 
