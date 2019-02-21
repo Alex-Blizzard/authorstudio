@@ -3,7 +3,7 @@ import HorizontalScroll from './Horizontal-Retail';
 import AS from './logo2.png';
 import STE from './STE';
 import ParticleAnimation from 'react-particle-animation';
-import './Design.scss';
+import './Design.css';
 import Oppo from './Oppo';
 import Logo from './Logo';
 import Model from './3Dmodel';

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Design.scss';
+import './Design.css';
 import o1 from './Oppo/1.png';
 import o2 from './Oppo/2.png';
 import o3 from './Oppo/3.png';

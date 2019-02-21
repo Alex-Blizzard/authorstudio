@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Design.scss';
+import './Design.css';
 import mo1 from './Model/1.jpg';
 import mo4 from './Model/4.jpg';
 import mo5 from './Model/5.jpg';

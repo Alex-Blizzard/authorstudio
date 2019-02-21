@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Design.scss';
+import './Design.css';
 import l1 from './Logo/1.jpg';
 import l2 from './Logo/2.jpg';
 import ReactPlayer from 'react-player'
