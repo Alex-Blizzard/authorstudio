@@ -5,7 +5,7 @@ import Biba from './Biba';
 import Maria from './Maria';
 import AS from './logo2.png';
 import './Retail-Home.css';
-import Retimg from './17.jpg';
+import Retimg from './Retail-home.jpg';
 import STE from './STE';
 import Royal from './Royal';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
