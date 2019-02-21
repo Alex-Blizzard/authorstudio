@@ -4,14 +4,20 @@
   
   scroll-behavior: smooth;
 }*/
+#root{
 
+  background-color:#000; 
+}
 .fade-in {
   opacity: 0;
+  transform: translateX(-100%)
 }
 .fade-in.visible {
   transition: opacity 1s ease-in;
-  opacity: 1;
+  opacity: 1; 
+  position:relative; transition: all 1s ease-out; transform: translateX(0%);
 }
+
 
 .fade-enter {
   opacity: 0;
@@ -120,7 +126,7 @@ body {
 
 canvas {
   display: block;
-  vertical-align: bottom;
+ 
 }
 
 /* ---- particles.js container ---- */
