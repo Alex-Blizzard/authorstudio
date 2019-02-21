@@ -1,9 +1,7 @@
 import React from 'react';
-import AS from './logo1.png';
-import i1 from './1.jpg';
 import './testsrl.css'
 import i2 from './11.jpg'
-import i3 from './6.jpg'
+
 
 const Pro = ()=>(
 

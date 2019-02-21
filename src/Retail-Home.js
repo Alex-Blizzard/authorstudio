@@ -1,17 +1,8 @@
 import React , {Component} from 'react';
-import AS from './logo1.png';
-import i1 from './1.jpg';
 import './testsrl.css';
 import i2 from './8.jpg';
-import i3 from './6.jpg';
-import {Link } from "react-router-dom";
-import App from './App';
-import Retail from './Retail';
-import Anim from './Retailanim';
 import './Animation';
 import Testscript from './Testscrip';
-
-import ReactDOM from 'react-dom'
 
 class Ret extends Component{
 

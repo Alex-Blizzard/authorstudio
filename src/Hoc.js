@@ -12,12 +12,18 @@ const AnimateLoad = (WrappedComponent) => {
             this.setState({loader:true});
          }
 
-        
-        componentDidMount(){
-            
-           setTimeout(() => {
+        windowLoaderHandler = () => {
             this.setState({pageAnimation: true,loader:false});
-            }, 3000)
+            console.log('window loaded');
+        }
+
+        componentDidMount(){
+            console.log('dom loaded');
+        //    setTimeout(() => {
+        //     this.setState({pageAnimation: true,loader:false});
+        //     }, 3000)
+        
+        window.addEventListener('load', this.windowLoaderHandler);
         }
         render(){
           

@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import './Design.css';
-import l1 from './Logo/1.jpg';
-import l2 from './Logo/2.jpg';
 import ReactPlayer from 'react-player'
 import v1 from './VFX/1.mp4'
 import v2 from './VFX/2.mp4'
