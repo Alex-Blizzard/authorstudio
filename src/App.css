@@ -8,6 +8,10 @@
 
   background-color:#000; 
 }
+
+.des-right > div{
+height: 100% !important;
+}
 .fade-in {
   opacity: 0;
   transform: translateX(-100%)

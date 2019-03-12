@@ -36,7 +36,17 @@ constructor(props){
 
     <div className="retail-home-image">
 
-        <img src = {i2} className={this.state.retailImg}/>
+    <div className="bor-anim">
+
+    <img src = {i2} className={this.state.retailImg}/>
+
+    <div className="inner-block">
+		<div className="slider-top-right"></div>
+	</div>
+
+    </div>
+
+       
 
        
 

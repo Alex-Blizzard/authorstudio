@@ -12,6 +12,8 @@ import SET from './STE';
 import Royal from './Royal';
 import { BrowserRouter as Router,Route } from 'react-router-dom';
 import Rou from './Route'
+import Loader from './Asortloader'
+import  Design  from "./Design";
 
 // const routing = (
 

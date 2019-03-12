@@ -9,6 +9,7 @@ import Retimg from './Retail-home.jpg';
 import STE from './STE';
 import Royal from './Royal';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Loa from "./Hocd";
 
 
  
@@ -57,4 +58,4 @@ class Retail extends Component {
       }
     }
 
-export default Retail;
+export default Loa(Retail);

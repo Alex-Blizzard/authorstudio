@@ -9,8 +9,6 @@ import Arrow from './Arrow';
 import Retail from './Retail';
 import { BrowserRouter as Router,Route, Link , Switch,Redirect} from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
-import Loader from 'react-loader-spinner';
-import animeHome from './Retailanim';
 import Menu from './Menubar';
 import Animate from './Hoc';
 import Design from './Design';
@@ -59,7 +57,7 @@ const ScrollingHorizontally = ()=>(
 
       <TransitionGroup>
 
-        <CSSTransition key = {location.key} classNames="fade" timeout={300}>
+        <CSSTransition key = {location.key} classNames="fade" timeout={3000}>
 
           <Switch location={location}>
 

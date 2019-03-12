@@ -3,7 +3,7 @@ import './Design.css';
 import ReactPlayer from 'react-player'
 import v1 from './VFX/1.mp4'
 import v2 from './VFX/2.mp4'
-import ParticleAnimation from 'react-particle-animation';
+import Particles from 'react-particles-js';
 
 class AddViewPlayer extends Component {
     state ={
@@ -28,7 +28,10 @@ class Vfx extends Component {
     render() {
         return (
         <div id="vfx">
-        <ParticleAnimation  style={{ position: 'absolute', width: '135vw', height: '100%' }} color={{ r: 0, g: 51, b: 102, a: 255 }} />
+
+<Particles params={{ "particles": { "number": { "value": 100 }, "size": { "value": 3 } , "color": { "value": "#003366"
+    } , "line_linked" : {"color" : "#003366"}}, "interactivity": { "events": { "onhover": { "enable": true, "mode": "repulse" } } } }} style={{position : 'absolute',width: '100%', height: '100%'}}/>
+        {/* <ParticleAnimation  lineWidth ={1} style={{ position: 'absolute', width: '100%', height: '100%' }} color={{ r: 0, g: 51, b: 102, a: 255 }} /> */}
          <label id="Label" >Visual Effects</label>
          <AddViewPlayer url={v1}/>
          <AddViewPlayer url={v2}/>

@@ -3,7 +3,7 @@ import './Design.css';
 import o1 from './Oppo/1.png';
 import o2 from './Oppo/2.png';
 import o3 from './Oppo/3.png';
-import ParticleAnimation from 'react-particle-animation';
+import Particles from 'react-particles-js';
 
 class Oppo extends Component {
 
@@ -13,8 +13,9 @@ class Oppo extends Component {
         return (
 
         <div id="oppo">
-        <ParticleAnimation style={{ position: 'absolute', width: '215vw', height: '100%' }}  background={{r: 0, g: 0, b: 0, a: 255}}/>
-
+        {/* <ParticleAnimation lineWidth ={1} style={{ position: 'absolute', width: '100%', height: '100%' }}  background={{r: 0, g: 0, b: 0, a: 255}}/> */}
+        <Particles params={{ "particles": { "number": { "value": 100 }, "size": { "value": 3 } , "color": { "value": "#fff"
+    } , "line_linked" : {"color" : "#fff"}}, "interactivity": { "events": { "onhover": { "enable": true, "mode": "repulse" } } } }} style={{position : 'absolute',width: '100%', height: '100%'}}/>
          <label id="Label" >Web Design</label>
 
         <div id="images">

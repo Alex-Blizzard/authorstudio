@@ -9,7 +9,7 @@ const AnimateLoad = (WrappedComponent) => {
 
         componentWillMount(){
 
-            this.setState({loader:true});
+            this.setState({pageAnimation: true,loader:false});
          }
 
         windowLoaderHandler = () => {
@@ -25,13 +25,18 @@ const AnimateLoad = (WrappedComponent) => {
 
         // console.log(window.addEventListener('load', this.windowLoaderHandler));
 
-        this.windowLoaderHandler();
         
-        // window.addEventListener('load', this.windowLoaderHandler);
-
         
+        window.addEventListener('load',console.log('updated') );
         }
 
+
+        // componentWillUpdate()
+        // {
+
+        //     this.setState({pageAnimation: true,loader:false});
+
+        // }
 
         // shouldComponentUpdate = () =>  { this.setState({pageAnimation: true,loader:false});}
 

@@ -13,10 +13,6 @@ const Arrow = ()=>(
 </div>
     
 
-
-    
-
-
 );
 
 export default Arrow;

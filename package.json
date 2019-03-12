@@ -10,6 +10,7 @@
     "react-loader-spinner": "^2.3.0",
     "react-onscroll": "^1.0.4",
     "react-particle-animation": "^1.0.1",
+    "react-particles-js": "^2.4.2",
     "react-player": "^1.9.3",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",

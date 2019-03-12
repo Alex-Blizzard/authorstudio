@@ -14,8 +14,7 @@ class Scrolling extends Component {
     this.resetMin = this.resetMin.bind(this)
     this.resetMax = this.resetMax.bind(this)
 
-    
-    
+  
   }
   
 
@@ -25,7 +24,7 @@ class Scrolling extends Component {
 
         this.setState({animValues : this.state.animValues-350})
 
-    },1000)
+    },1500)
     
     
     
@@ -120,6 +119,10 @@ class Scrolling extends Component {
 
       // let max = el.lastElementChild.scrollWidth
       let max = el.lastElementChild.scrollWidth;
+
+
+
+      console.log(max);
       
       let win = el.offsetWidth
 

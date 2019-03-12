@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import './Design.css';
 import l1 from './Logo/1.jpg';
 import l2 from './Logo/2.jpg';
-import ParticleAnimation from 'react-particle-animation';
+
+import Particles from 'react-particles-js';
 
 
 class Logo extends Component {
@@ -14,8 +15,9 @@ class Logo extends Component {
 
         <div id="logo">
 
-        <ParticleAnimation style={{ position: 'absolute', width: '135vw', height: '100%' }}  background={{r: 0, g: 0, b: 0, a: 255}} />
-        
+        {/* <ParticleAnimation lineWidth ={1} style={{ position: 'absolute', width: '100%', height: '100%' }}  background={{r: 0, g: 0, b: 0, a: 255}} /> */}
+        <Particles params={{ "particles": { "number": { "value": 100 }, "size": { "value": 3 } , "color": { "value": "#fff"
+    } , "line_linked" : {"color" : "#fff"}}, "interactivity": { "events": { "onhover": { "enable": true, "mode": "repulse" } } } }} style={{position : 'absolute',width: '100%', height: '100%'}}/>
          <label id="Label" >Logo Design</label>
 
         <div id="images">
